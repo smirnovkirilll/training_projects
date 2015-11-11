@@ -1,19 +1,19 @@
 #name: big_digits
 #author: Smirnov Kirill
-#revision: 1.0
-#revision date: 06.11.2015
+#revision: 1.1
+#revision date: 11.11.2015
 #description: this script prints digits, that user has input, in format of pseudo-digits, and they're BIG.
 
 
 from digits_itself import *
+symbols_to_replace = '[]\','
 
 
+#reads input from keyboard, clear from non digits, returns number as a string
 def getnums ():
-    """function read from keyboard,
-    clear from non digits"""
-    print ("print the nymber you wanna print")
+    print ("print the number you wanna print")
     dirty_number = input (">")
-    clear_number = ""
+    clear_number = ''
     for letter in dirty_number:
         try:
             letter = int(letter)
@@ -22,32 +22,20 @@ def getnums ():
             clear_number = clear_number
     return clear_number
 
+def replace_symbols (big_digit, replacement):
+    replaced_symbols = []
+    for line in big_digit:
+        replaced_line = line.replace('*', replacement)
+        replaced_symbols.append(replaced_line)
+    return replaced_symbols
 
+#transforms number to list of big symbols
 def getlist (clear_number):
     list_of_digits = []
-    for letter in clear_number:
-        if int(letter) == 0:
-            list_of_digits.append(big_digits[0])
-        elif int(letter) == 1:
-            list_of_digits.append(big_digits[1])
-        elif int(letter) == 2:
-            list_of_digits.append(big_digits[2])
-        elif int(letter) == 3:
-            list_of_digits.append(big_digits[3])
-        elif int(letter) == 4:
-            list_of_digits.append(big_digits[4])
-        elif int(letter) == 5:
-            list_of_digits.append(big_digits[5])
-        elif int(letter) == 6:
-            list_of_digits.append(big_digits[6])
-        elif int(letter) == 7:
-            list_of_digits.append(big_digits[7])
-        elif int(letter) == 8:
-            list_of_digits.append(big_digits[8])
-        elif int(letter) == 9:
-            list_of_digits.append(big_digits[9])
+    for i in clear_number:
+        replaced_symbols = replace_symbols (big_digits[int(i)], i)
+        list_of_digits.append(replaced_symbols)
     return list_of_digits
-
 
 def printing (list_of_digits):
     """function prints list of ints
@@ -57,13 +45,11 @@ def printing (list_of_digits):
         for one_digit in list_of_digits:
             one_line.append(one_digit[i])
         one_line = str(one_line)
-        one_line = one_line.replace("\'", "")
-        one_line = one_line.replace(",", "")
-        one_line = one_line.replace("[", "")
-        one_line = one_line.replace("]", "")
+        for sym in symbols_to_replace:
+            one_line = one_line.replace(sym, '')
         print (one_line)
 
 
 clear_number = getnums()
 list_of_digits = getlist(clear_number)
-printing(list_of_digits)
+printing (list_of_digits)
