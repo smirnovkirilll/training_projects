@@ -25,35 +25,35 @@ yes_answers = ['y', 'Y', 'yes', 'Yes'] #how user can confirm git renew
 
 def make_content_list ():
     call ('ls ' + full_source_folder + ' > content_list.txt', shell =  True)
-    with open('content_list.txt') as f:
+    with open ('content_list.txt') as f:
         content_list_raw = f.readlines()
     call ('rm content_list.txt', shell =  True)
     content_list = []
     for content in content_list_raw:
         if '.md' in content:
-            content_list.append(content.split('.')[0])
+            content_list.append (content.split('.')[0])
     return content_list
 
 def make_file_name (name):
     file_name = []
     for param in params_list:
         if param == '.html':
-            string_name = site_folder + '/' +name + param
+            string_name = site_folder + '/' + name + param
         else:
-            string_name = site_folder + '/' +source_folder + '/' + name + param
-        file_name.append(string_name)
+            string_name = full_source_folder + '/' + name + param
+        file_name.append (string_name)
     return file_name
 
 def make_md (content_md, temp_html):
     markdown.markdownFromFile (content_md, temp_html, extensions)
 
 def make_jinja (temp_html, ready_html):
-    env = Environment(loader = FileSystemLoader(full_source_folder))
-    template = env.get_template(main_template)
-    content_object = open(temp_html)
-    output = template.render(foo = content_object.read())
-    with open(ready_html, 'w') as f:
-        f.write(output)
+    env = Environment (loader = FileSystemLoader(full_source_folder))
+    template = env.get_template (main_template)
+    content_object = open (temp_html)
+    output = template.render (foo = content_object.read())
+    with open (ready_html, 'w') as f:
+        f.write (output)
 
 def make_site ():
     content_list = make_content_list ()
