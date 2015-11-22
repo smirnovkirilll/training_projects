@@ -1,7 +1,7 @@
 #name: marky_jinja
 #author: Smirnov Kirill
-#revision: 1.2
-#revision date: 21.11.2015
+#revision: 1.3
+#revision date: 22.11.2015
 #description: this app uses advantages of markdown and jinja templating to make static site. it renders markdown
 #file to temporary_html and after it renders temporary_html to ready_html with header, footer and css (theme)
 #via jinja. ready html to be used as usual static site (i.e. githubpages)
@@ -20,7 +20,6 @@ full_source_folder = site_folder + '/' + source_folder
 main_template = 'header-footer.html' #this stuff + css = theme
 params_list = ['.md', '_temp.html', '.html'] #convention for this app
 extensions = ['markdown.extensions.nl2br', 'markdown.extensions.extra']
-yes_answers = ['y', 'Y', 'yes', 'Yes'] #how user can confirm git renew
 
 
 def make_content_list ():
@@ -63,19 +62,5 @@ def make_site ():
         make_jinja (file_name[1], file_name[2])
         call ('rm ' + file_name[1], shell = True)
 
-def git_renew ():
-    print ("html_pages of your site, are ready. should i add-commit-push it to git? (only if repo already exists)")
-    answer = input ("(y/N)>")
-    if answer in yes_answers:
-        #it won't work, you're not in your project directory
-        print ("please, add some comment to commit")
-        commit_comment = input (">")
-        call ('git add .', shell = True)
-        call ("git commit -m '" + commit_comment + "'", shell = True)
-        call ('git push origin master', shell = True)
-    else:
-        print ("ok, sir, bye!")
-
 
 make_site ()
-git_renew ()
