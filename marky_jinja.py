@@ -56,11 +56,14 @@ def make_jinja (temp_html, ready_html):
 
 def make_site ():
     content_list = make_content_list ()
+    print ("script made:")
     for name in content_list:
         file_name = make_file_name (name)
         make_md (file_name[0], file_name[1])
         make_jinja (file_name[1], file_name[2])
         call ('rm ' + file_name[1], shell = True)
+        print (name)
+    print ("html pages total = %d" % len (content_list))
 
 
 make_site ()
