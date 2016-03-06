@@ -5,5 +5,5 @@ I hope repo can help people, interested in colloboration with (or hiring) me, to
 
 Besides this repo, containing small automation scripts and algorythmic tasks (everything solved by myself, no cheating), a have two websites:
 
-[flaskcombine-smirnovkirilll.rhcloud.com](http://flaskcombine-smirnovkirilll.rhcloud.com){:target="_blank"} - flask application, i develope while learning this beatiful framework,
-[smirnovkirilll.github.io/](http://smirnovkirilll.github.io/){:target="_blank"} - even simpler app, where i tell about my current occupation (business analysis, automation mostly).
+[flaskcombine-smirnovkirilll.rhcloud.com](http://flaskcombine-smirnovkirilll.rhcloud.com) - flask application, i develope while learning this beatiful framework,
+[smirnovkirilll.github.io/](http://smirnovkirilll.github.io/) - even simpler app, where i tell about my current occupation (business analysis, automation mostly).
