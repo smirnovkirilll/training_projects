@@ -1,18 +1,18 @@
-#name: big_digits
-#author: Smirnov Kirill
-#revision: 1.1
-#revision date: 11.11.2015
-#description: this script prints digits, that user has input, in format of pseudo-digits, and they're BIG.
+# name: big_digits
+# author: Smirnov Kirill
+# revision: 1.2
+# revision date: 17.10.2016
+# description: this script prints digits, that user has input, in format of pseudo-digits, and they're BIG.
 
 
 from digits_itself import *
 symbols_to_replace = '[]\','
 
 
-#reads input from keyboard, clear from non digits, returns number as a string
-def getnums ():
+# reads input from keyboard, clear from non digits, returns number as a string
+def getnums():
     print ("print the number you wanna print")
-    dirty_number = input (">")
+    dirty_number = input(">")
     clear_number = ''
     for letter in dirty_number:
         try:
@@ -22,25 +22,27 @@ def getnums ():
             clear_number = clear_number
     return clear_number
 
-def replace_symbols (big_digit, replacement):
+
+def replace_symbols(big_digit, replacement):
     replaced_symbols = []
     for line in big_digit:
         replaced_line = line.replace('*', replacement)
         replaced_symbols.append(replaced_line)
     return replaced_symbols
 
-#transforms number to list of big symbols
-def getlist (clear_number):
+
+# transforms number to list of big symbols
+def getlist(clear_number):
     list_of_digits = []
     for i in clear_number:
-        replaced_symbols = replace_symbols (big_digits[int(i)], i)
+        replaced_symbols = replace_symbols(big_digits[int(i)], i)
         list_of_digits.append(replaced_symbols)
     return list_of_digits
 
-def printing (list_of_digits):
-    """function prints list of ints
-    in format of big digits"""
-    for i in range (0, letter_height):
+
+def printing(list_of_digits):
+    """function prints list of ints in format of big digits"""
+    for i in range(0, letter_height):
         one_line = []
         for one_digit in list_of_digits:
             one_line.append(one_digit[i])
@@ -52,4 +54,4 @@ def printing (list_of_digits):
 
 clear_number = getnums()
 list_of_digits = getlist(clear_number)
-printing (list_of_digits)
+printing(list_of_digits)
