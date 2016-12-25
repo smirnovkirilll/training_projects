@@ -32,7 +32,7 @@
 
 [LinkedIn](https://www.linkedin.com/in/smirnovkirilll)
 
-[HeadHunter](https://www.hh.ru/resume/205ae247ff0277c1e80039ed1f566c4e535477)
+[HeadHunter](https://www.hh.ru/resume/205ae247ff0277c1e80039ed1f566c4e535477)(только для зарегистрированных пользователей)
 
 smirnovkirill2010@gmail.com
 

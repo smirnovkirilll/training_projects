@@ -1,17 +1,22 @@
-Hello!
+<strong>Kirill Smirnov, junior python developer</strong>
 
-My name is Kirill and i am junior python developer, linux and bash user, with strong background in software development management (5 years as BA and PM).
+I am junior python developer, linux and bash user, with strong background in software development management (since 2011 in IT as business analytic and project manager).
 
-This repo is for my training projects only, it's very unlikely you can find here something really useful. But i hope repo can help people, interested in colloboration with (or hiring) me, to better understand what technologies i use. It contains small automation scripts and algorythmic tasks easy to show, for now my dev-level is little higher.
+Current occupation is about working around with big data in marketing startup. That is under NDA, so in this repo just my old scripts, which i supposed were helpful to train. Repo contains small automation scripts and algorythmic tasks easy to show (which are not really useful or complex or can say enough about my current skills level).
 
-Besides i have two websites:
-
-[flaskcombine-smirnovkirilll.rhcloud.com](http://flaskcombine-smirnovkirilll.rhcloud.com) - flask application, i develope while learning this beatiful framework, it uses:
-- MVC-paradigm (views leaves away from models),
-- Blueprints (flask-way of best code organization),
+Besides i have playground flask application, i develope while learning this framework:
+[flaskcombine-smirnovkirilll.rhcloud.com](http://flaskcombine-smirnovkirilll.rhcloud.com), it uses:
+- MVC-paradigm (views apart from models),
+- Blueprints (flask-way of code organizing),
 - SQLAlchemy for models generating,
-- Bootstrap stuff, some side-services (like draw.io, pygal) to full pages with reach content.
+- Bootstrap stuff, some side-services (like draw.io, pygal) to enrich content with visual component.
 
-[smirnovkirilll.github.io](http://smirnovkirilll.github.io) - simple app, where i tell about my current occupation (business analysis, automation mostly).
+If you speak russian and interested in my BA-PM services, some info in this repo too, right [here](https://github.com/smirnovkirilll/training_projects/blob/master/ba_pm.md)
 
-Feel free to contact me if i can help you.
+<strong>Feel free to contact if i can help you:</strong>
+
+[LinkedIn](https://www.linkedin.com/in/smirnovkirilll)(rus)
+
+[HeadHunter](https://hh.ru/resume/3500ad7cff02d2e35f0039ed1f6b427476514a)(rus, registered users only)
+
+smirnovkirill2010@gmail.com
