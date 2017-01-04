@@ -1,6 +1,6 @@
 <strong>Kirill Smirnov, junior python developer</strong>
 
-I am junior python developer, linux and bash user, with strong background in software development management (since 2011 in IT as business analytic and project manager).
+I am junior programmer (python, math), linux and bash user, with strong background in software development management (since 2011 in IT as business analyst and project manager).
 
 Current occupation is about working around with big data in marketing startup. That is under NDA, so in this repo just my old scripts, which i supposed were helpful to train. Repo contains small automation scripts and algorythmic tasks easy to show (which are not really useful or complex or can say enough about my current skills level).
 
