@@ -1,4 +1,4 @@
-<strong>Kirill Smirnov, junior python developer</strong>
+<strong>Kirill Smirnov, junior programmer-analyst</strong>
 
 I am junior programmer (python, math), linux and bash user, with strong background in software development management (since 2011 in IT as business analyst and project manager).
 
