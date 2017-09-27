@@ -1,22 +1,25 @@
-<strong>Kirill Smirnov, junior programmer-analyst</strong>
+<strong>Kirill Smirnov - Data Engineer, Software Developer</strong>
 
-I am junior programmer (python, math), linux and bash user, with strong background in software development management (since 2011 in IT as business analyst and project manager).
+I have been working in IT for more than 6 years:
+- 2016 - present - full-time programmer at geomarketing startup,
+- 2011 - 2016 - business-analyst, IT project manager at advertisement, e-commerce (inhouse software development).
 
-Current occupation is about working around with big data in marketing startup. That is under NDA, so in this repo just my old scripts, which i supposed were helpful to train. Repo contains small automation scripts and algorythmic tasks easy to show (which are not really useful or complex or can say enough about my current skills level).
+My current role is a member of the team preparing business insights for our clients on a base of geospatial data. I'm focusing on data munging, such as: html-parsing, cleaning, transforming, storing in databases, building mathematical models etc.
 
-Besides i have playground flask application, i develope while learning this framework:
-[flaskcombine-smirnovkirilll.rhcloud.com](http://flaskcombine-smirnovkirilll.rhcloud.com), it uses:
+Python is my primary development language; bash, C - secondary ones.  
+Databases I'm working with: PostgreSQL, MySQL, SQLite.  
+Statistics, linear algebra are in common usage (as well as pandas, numpy packages).  
+Realizing potential business value of machine learning, I'm going to study it in 2018 year.
+
+This repo contains my old scripts (small automation and algorythmic tasks), which i supposed to be helpful to get job offer a year ago (and had helped). But please note: it says not so much about my current skills level. Due to certain legal requirements, commercial projects as well as parts of them can't be placed here.
+
+Also i have playground flask [application](https://flaskcombine-smirnovkirilll.rhcloud.com), i developed while learning this framework. There you can see:
 - MVC-paradigm (views apart from models),
 - Blueprints (flask-way of code organizing),
 - SQLAlchemy for models generating,
-- Bootstrap stuff, some side-services (like draw.io, pygal) to enrich content with visual component.
+- Bootstrap stuff, some side-services (like draw.io, pygal) to enrich content with visual components.
 
-If you speak russian and interested in my BA-PM services, some info in this repo too, right [here](https://github.com/smirnovkirilll/training_projects/blob/master/ba_pm.md)
-
-<strong>Feel free to contact if i can help you:</strong>
-
-[LinkedIn](https://www.linkedin.com/in/smirnovkirilll)(rus)
-
-[HeadHunter](https://hh.ru/resume/3500ad7cff02d2e35f0039ed1f6b427476514a)(rus, registered users only)
-
-smirnovkirill2010@gmail.com
+<strong>Feel free to contact if i can help you:</strong>  
+[LinkedIn](https://www.linkedin.com/in/smirnovkirilll)(rus)  
+[HeadHunter](https://hh.ru/resume/3500ad7cff02d2e35f0039ed1f6b427476514a)(rus, registered users only)  
+smirnovkirill2010@gmail.com  
