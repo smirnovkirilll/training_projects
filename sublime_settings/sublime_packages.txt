@@ -1,0 +1,16 @@
+anaconda
+brackethighlighter
+colorhighlighter
+colorpicker
+cpp check
+emmet
+git
+gitgutter
+latextools
+markdown-preview
+package-control
+plain-tasks
+readme please
+sidebar enchancement
+shell check
+sublime linter
