@@ -10,6 +10,7 @@ latextools
 markdown-preview
 package-control
 plain-tasks
+plantuml
 readme please
 sidebar enchancement
 shell check
