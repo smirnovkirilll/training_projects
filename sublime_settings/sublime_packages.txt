@@ -8,6 +8,7 @@ git
 gitgutter
 latextools
 markdown-preview
+openscad
 package-control
 plain-tasks
 plantuml
